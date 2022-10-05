@@ -27,7 +27,7 @@ export default function Sidebar() {
     return (
       <>
       
-      <div className={`min-h-screen ${open ? "w-72" : "w-16"} fixed duration-500 z-20 text-white rounded-sm drop-shadow-xl`} >
+      <div className={`min-h-screen ${open ? "w-72" : "w-16"} fixed duration-500 z-20 text-white rounded-sm drop-shadow-xl `} >
         <div className="py-3 flex justify-end  px-4 "  style={{background:"#1d2028"}}>
           <FiMenu size={27} className="cursor-pointer" onClick={() => setopen(!open)} />
         </div>
