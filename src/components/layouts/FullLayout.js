@@ -8,7 +8,7 @@ import Navbar from '../custom-elements/Navbar'
 export default function FullLayout() {
   return (
     <>
-    {/* <Navbar /> */}
+    <Navbar />
       <div className='flex flex-col '>
         <Sidebar />
       </div>

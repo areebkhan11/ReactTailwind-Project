@@ -17,7 +17,7 @@ export default function Navbar() {
             <div class="container-fluid w-full flex flex-wrap items-center justify-between px-6">
                 <div class="container-fluid pl-4">
                     
-                    <a class="text-4xl text-blue-500 font-semibold" href="/">WeShare</a>
+                    
                 </div>
                 
                 <button type="button" 
