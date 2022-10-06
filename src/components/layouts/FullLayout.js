@@ -9,16 +9,22 @@ import RightSideBar from '../../pages/RightSideBar';
 export default function FullLayout() {
   return (
     <>
-    <Navbar />
+    <div className='flex flex-col '>
+
       <div className='flex flex-col '>
         <Sidebar />
       </div>
-      <div  className='flex flex-row-reverse w-full h-screen'>
+      <div  className='flex flex-row-reverse '>
         <RightSideBar />
       </div>
-        {/* <div className='pl-60'>
+      <div>
+        <Navbar />
+      </div>
+        <div className='pl-60'>
         <Outlet  />
-        </div> */}
+        </div>
+
+    </div>
     </>
   )
 }
