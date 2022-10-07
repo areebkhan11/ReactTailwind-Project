@@ -21,7 +21,7 @@ const Router =  [
         element: <FullLayout />,
         children: [
             { path: "/",  element:<Navigate to="/dashboard"/>},
-            // { path: "/dashboard", element: <Dashboard /> },
+            { path: "/dashboard", element: <Dashboard /> },
             { path: '*', element: <Navigate to="/dashboard" /> },
             // { path: '/Posts', element: <Posts /> },
             

@@ -1,16 +1,33 @@
 import React from 'react'
-import Form from '../components/form/Form'
-import Posts from '../components/Posts/Posts'
+import Card from '../components/Card'
 
 export default function Dashboard() {
+  const cards = [
+    {
+      id: 1,
+      name: "Today"
+    },
+    {
+      id: 2,
+      name: "Overdue"
+    },
+    {
+      id: 3,
+      name: "Tickets"
+    },
+    {
+      id: 4,
+      name: "Targets"
+    }
+  ]
+
   return (
-    <div class="flex flex-row gap-11 justify-between m-32 ">
-    <div>
-      <Posts />   
-    </div>
-    <div>
-      <Form />
-    </div>
-  </div>
+    cards.map(card => {
+      return(
+        <div>
+          <Card card={card}/>
+        </div>
+      )
+    })
   )
 }

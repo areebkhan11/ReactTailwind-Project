@@ -30,7 +30,6 @@ export default function Sidebar() {
   const [id, setId] = React.useState(false)
   const navigate = useNavigate();
 
-
   const handletogle = (i) =>{
 
       const filter = NavbarItems.find((x=> x.id === i))
