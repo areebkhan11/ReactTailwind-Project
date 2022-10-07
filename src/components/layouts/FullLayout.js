@@ -20,7 +20,7 @@ export default function FullLayout() {
       <div>
         <Navbar />
       </div>
-        <div className='flex justify-center gap-6 pt-5'>
+        <div className='flex justify-center'>
         <Outlet  />
         </div>
 
