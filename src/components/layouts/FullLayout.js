@@ -9,23 +9,20 @@ import RightSideBar from '../../pages/RightSideBar';
 export default function FullLayout() {
   return (
     <>
-    <div className='flex flex-col h-screen item-center '>
+    <div className='flex flex-col'>
 
-      
+      <div className='flex flex-col'>
         <Sidebar />
-     
-      <div  className='flex flex-row-reverse '>
+      </div>
+      <div  className='flex flex-row-reverse'>
         <RightSideBar />
       </div>
-    <div>
-        {/* <Navbar className='absolute'/> */}
-
-    </div>
-
-      
+      <div>
+        <Navbar />
+      </div>
+        <div className='flex justify-center'>
         <Outlet  />
-      
-
+        </div>
     </div>
     </>
   )
