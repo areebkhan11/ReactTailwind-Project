@@ -7,6 +7,7 @@ import { MdSupervisedUserCircle } from "react-icons/md"
 import { MdSettings } from "react-icons/md"
 import { FiGitBranch } from "react-icons/fi"
 import { GoCalendar } from "react-icons/go"
+
 import img from "../../assets/images/kisspng-avatar-user-medicine-surgery-patient-avatar-5acc9f7a7cb983.0104600115233596105109.jpg"
 
 
@@ -44,11 +45,12 @@ export default function Sidebar() {
     return (
       <>
       
-      <div className={`min-h-screen ${open ? "w-72" : "w-16"} fixed duration-500 z-20 text-white rounded-sm drop-shadow-xl `} >
+      <div className={` ${open ? "w-72" : "w-16"} fixed duration-500 z-20 text-white rounded-sm drop-shadow-xl `} >
+        
         <div className="py-3 flex justify-end  px-4 "  style={{background:"#1d2028"}}>
           <FiMenu size={27} className="cursor-pointer" onClick={() => setopen(!open)} />
         </div>
-        <div className='bg-black h-32  ' style={{background:"#1d2028"}}>
+        <div className='bg-black h-32' style={{background:"#1d2028"}}>
           {open ? <div>
           <h6>Master admin</h6>
           <p>Inam@zaavia.net</p>
@@ -91,11 +93,8 @@ export default function Sidebar() {
                           </li>
                         </ul>
                         )
-
-                      })
-
-
-            }
+                        })
+                       }
                   </li>
                 </ul>}
                 

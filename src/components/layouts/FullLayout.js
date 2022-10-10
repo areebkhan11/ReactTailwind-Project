@@ -23,7 +23,6 @@ export default function FullLayout() {
         <div className='flex justify-center bg-[#F5F5F5]'>
         <Outlet  />
         </div>
-
     </div>
     </>
   )
