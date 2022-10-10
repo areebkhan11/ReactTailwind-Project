@@ -1,11 +1,11 @@
 import React from 'react'
 
-const DashboardSection2 = ({card2}) => {
+const DashboardSection2 = ({children}) => {
 
     return (
     
-            <div class="block rounded-lg shadow-lg bg-white w-full text-center col-span-2">
-                <div class="py-3 px-6 border-gray-300 font-medium flex justify-start">
+            <div class="block rounded-lg shadow-lg bg-white w-full text-center">
+                {/* <div class="py-3 px-6 border-gray-300 font-medium flex justify-start">
                     {card2.name}
                 </div>
                 <div class="p-6">
@@ -17,7 +17,8 @@ const DashboardSection2 = ({card2}) => {
                 </div>
                 <div class="py-3 px-6 border-t border-gray-300 text-gray-600">
                     2 days ago
-                </div>
+                </div> */}
+                {children}
             </div>
 
     )
