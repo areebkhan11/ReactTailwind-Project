@@ -22,13 +22,13 @@ export default function RightSideBar() {
     return (
         <>
             <div className={`min-h-screen ${open ? "w-80" : "w-16"} fixed duration-500 z-20 text-white rounded-sm drop-shadow-xl `} >
-                <div className="py-5 flex flex-row justify-between absolute px-5 w-full" style={{ background: "#3C4252" }}>
-                    <HiUsers size={25} className="cursor-pointer fixed" onClick={() => setopen(true)} />
+                <div className="py-5 flex flex-row justify-between absolute px-5 w-full bg-[#3C4252]">
+                    <HiUsers className="cursor-pointer fixed" onClick={() => setopen(true)} />
                     <p className='ml-11'>Users</p>
                     <ImSearch className='mr-5 mt-1' />
                     <ImCross className='mt-1 cursor-pointer' onClick={() => setopen(false)} />
                 </div>
-                <div className='flex flex-col gap-3 px-4 pt-20 min-h-screen text-black' style={{ background: "#F5F5F5" }} >
+                <div className='flex flex-col gap-3 px-4 pt-20 min-h-screen text-black bg-[#F5F5F5]' >
                     {
                         users.map(user => {
                             return (

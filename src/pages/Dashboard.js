@@ -124,7 +124,7 @@ export default function Dashboard() {
         </Card>
       </div>
 
-      <div className='flex flex-row gap-4 gap-8 mt-6 col-span-2'>
+      <div className='flex flex-row gap-4 gap-8 mt-6 col-span-2 mb-8'>
         <DashboardSection2>
           <div className='flex justify-start font-medium text-xl py-4 px-4'>
             Task Distribution
@@ -188,7 +188,7 @@ export default function Dashboard() {
                     <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
                   </td>
                 </tr>
-                <tr class="bg-white dark:bg-black-800 divide-x">
+                <tr class="bg-white dark:bg-black-800 divide-x border-b">
                   <th scope="row" class="py-4 px-6 font-medium text-black-900 whitespace-nowrap dark:text-black">
                     Magic Mouse 2
                   </th>
@@ -207,18 +207,19 @@ export default function Dashboard() {
                 </tr>
               </tbody>
             </table>
+          <div className='flex flex-row justify-evenly gap-16 font-medium text-xl py-10 border-t mt-8'>
+            <p>{`Team Assigned Tasks (C)`}</p>
+            <p>Team Completed Tasks</p>
           </div>
-
-          <div>
-            
-          </div>
-
+        </div>
         </DashboardSection2>
 
         <DashboardSection2>
-          <div className='flex justify-start font-medium text-xl py-4 px-4'>
+          <div className='flex justify-start font-medium text-xl py-4 px-4 border-b'>
             Task Distribution
           </div>
+
+          <h3 className='font-medium text-xl'>Assign Task</h3>
         </DashboardSection2>
       </div>
     </div>
