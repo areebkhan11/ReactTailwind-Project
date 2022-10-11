@@ -14,12 +14,7 @@ export default function FullLayout() {
       <div className='flex flex-col ml-2'>
         <Sidebar />
       </div>
-      <div  className='flex flex-row-reverse'>
-        <RightSideBar />
-      </div>
-      <div>
-        <Navbar />
-      </div>
+    
         <div className='flex justify-center bg-[#F5F5F5]'>
         <Outlet  />
         </div>
