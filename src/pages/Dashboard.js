@@ -12,7 +12,7 @@ export default function Dashboard() {
         <h3>Team's Dashboard</h3>
       </div>
 
-      <div className='grid grid-cols-4 gap-4 place-items-center gap-8 mt-6'>
+      <div className='flex flex-row flex-wrap gap-4 place-items-center gap-8 mt-6'>
         <Card>
           <div className="py-3 px-6 border-gray-300 flex justify-start text-xl">
             <select
@@ -47,7 +47,7 @@ export default function Dashboard() {
           <div className="py-3 px-6 border-gray-300 font-medium flex justify-start text-xl">
             Overdue
           </div>
-          
+
           <div className="p-6">
             <h5 className="text-xl font-medium mb-2">Until Today</h5>
             <p className={`text-base text-[#f44336] mb-4 font-medium text-7xl`}>
@@ -57,7 +57,7 @@ export default function Dashboard() {
           </div>
 
           <div class="flex justify-start font-medium py-9 px-6 border-t border-gray-300">
-           {`Until ${date.toLocaleDateString()} : 0`}
+            {`Until ${date.toLocaleDateString()} : 0`}
           </div>
         </Card>
 
@@ -100,7 +100,7 @@ export default function Dashboard() {
             </p>
           </div>
 
-          <div class="flex justify-start font-medium py-4 px-6 border-t border-gray-300">
+          <div class="flex justify-start font-medium py-4 px-6 mb-2 border-t border-gray-300">
             Verification Pending:
             <select
               type="text"
@@ -111,7 +111,7 @@ export default function Dashboard() {
             </select>
           </div>
 
-          <div class="flex justify-start font-medium py-10 px-6 border-t border-gray-300">
+          <div class="flex justify-start font-medium py-9 px-6 border-t border-gray-300">
             View All Targets:
             <select
               type="text"
@@ -124,11 +124,95 @@ export default function Dashboard() {
         </Card>
       </div>
 
-      <div className='grid grid-cols-2 gap-4 gap-8 mt-6 col-span-2'>
+      <div className='flex flex-row gap-4 gap-8 mt-6 col-span-2'>
         <DashboardSection2>
           <div className='flex justify-start font-medium text-xl py-4 px-4'>
             Task Distribution
           </div>
+
+          <div class="overflow-x-auto relative shadow-md sm:rounded-lg">
+            <table class="w-full text-sm text-left text-black-500 dark:text-black-400">
+              <thead class="text-sm text-black-700 uppercase bg-white-50 dark:bg-white-700 dark:text-black-400">
+                <tr className='border-b border-t divide-x text-center'>
+                  <th scope="col" class="py-3 px-6">
+                    TASK
+                  </th>
+                  <th scope="col" class="py-3 px-6">
+                    {`Assigned (A)`}
+                  </th>
+                  <th scope="col" class="py-3 px-6">
+                    {`Completed (B)`}
+                  </th>
+                  <th scope="col" class="py-3 px-6">
+                    {`Individual \n`}
+                    {`(B/A) * 100`}
+                  </th>
+                  <th scope="col" class="py-3 px-6">
+                    {`Total \n`}
+                    {`(B/A) * 100`}
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-white border-b dark:bg-black-800 divide-x dark:border-black-700">
+                  <th scope="row" class="py-4 px-6 font-medium text-black-900 whitespace-nowrap dark:text-black">
+                    Apple MacBook Pro 17"
+                  </th>
+                  <td class="py-4 px-6">
+                    Sliver
+                  </td>
+                  <td class="py-4 px-6">
+                    Laptop
+                  </td>
+                  <td class="py-4 px-6">
+                    $2999
+                  </td>
+                  <td class="py-4 px-6">
+                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                  </td>
+                </tr>
+                <tr class="bg-white border-b dark:bg-black-800 divide-x dark:border-black-700">
+                  <th scope="row" class="py-4 px-6 font-medium text-black-900 whitespace-nowrap dark:text-black">
+                    Microsoft Surface Pro
+                  </th>
+                  <td class="py-4 px-6">
+                    White
+                  </td>
+                  <td class="py-4 px-6">
+                    Laptop PC
+                  </td>
+                  <td class="py-4 px-6">
+                    $1999
+                  </td>
+                  <td class="py-4 px-6">
+                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                  </td>
+                </tr>
+                <tr class="bg-white dark:bg-black-800 divide-x">
+                  <th scope="row" class="py-4 px-6 font-medium text-black-900 whitespace-nowrap dark:text-black">
+                    Magic Mouse 2
+                  </th>
+                  <td class="py-4 px-6">
+                    Black
+                  </td>
+                  <td class="py-4 px-6">
+                    Accessories
+                  </td>
+                  <td class="py-4 px-6">
+                    $99
+                  </td>
+                  <td class="py-4 px-6">
+                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div>
+            
+          </div>
+
         </DashboardSection2>
 
         <DashboardSection2>
