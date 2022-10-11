@@ -8,6 +8,7 @@ import { MdSettings } from "react-icons/md"
 import { FiGitBranch } from "react-icons/fi"
 import { GoCalendar } from "react-icons/go"
 import Navbar from '../custom-elements/Navbar'
+import { Outlet } from 'react-router-dom';
 import img from "../../assets/images/kisspng-avatar-user-medicine-surgery-patient-avatar-5acc9f7a7cb983.0104600115233596105109.jpg"
 
 import { HiUsers, HiUserCircle } from 'react-icons/hi'
@@ -166,11 +167,14 @@ export default function Sidebar() {
             </div>
             </div>
 
-      <div className={`${open ? "ml-64 duration-500" : "ml-12"}`}>
+      <div className={`${open ? "ml-64 duration-500" : "ml-12"} bg-[#F5F5F5] border-b border-gray-400`}>
         <Navbar openRight={openRight}/>
       </div>
-</div>
-
+    </div>
+    
+    <div className={`${open ? "ml-64 duration-500" : "ml-0"} flex justify-center bg-[#F5F5F5]`}>
+        <Outlet  />
+        </div>
     </>
    
     )

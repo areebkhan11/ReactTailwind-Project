@@ -1,5 +1,4 @@
 import React from 'react'
-import { Outlet } from 'react-router-dom';
 
 import Sidebar from '../sidebar/Sidebar'
 import Navbar from '../custom-elements/Navbar'
@@ -15,9 +14,7 @@ export default function FullLayout() {
         <Sidebar />
       </div>
     
-        <div className='flex justify-center bg-[#F5F5F5]'>
-        <Outlet  />
-        </div>
+        
     </div>
     </>
   )

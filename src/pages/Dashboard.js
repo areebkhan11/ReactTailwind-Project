@@ -21,7 +21,8 @@ export default function Dashboard() {
               className="form-control block font-medium rounded transition ease-in-out m-0 focus:bg-white focus:outline-none"
             >
               <option>Today</option>
-              <option>Other</option>
+              <option>This Week</option>
+              <option>Specific Date</option>
             </select>
           </div>
 
