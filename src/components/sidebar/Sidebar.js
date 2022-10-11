@@ -169,8 +169,17 @@ export default function Sidebar() {
           </div>
         </div>
 
+
         <div className={`${open ? "ml-64 duration-500" : "ml-12"} bg-[#F5F5F5] border-b border-gray-400`}>
           <Navbar openRight={openRight} />
+
+      <div className={`${open ? "ml-64 duration-500" : "ml-12"} bg-[#F5F5F5] border-b border-gray-400`}>
+        <Navbar openRight={openRight}/>
+      </div>
+    </div>
+    
+    <div className={`${open ? "ml-72 duration-500 mr-20" : "ml-0" }  ${openRight ? "mr-72 duration-500 ml-20" : "mr-0" } flex justify-center bg-[#F5F5F5]`}>
+        <Outlet  />
         </div>
       </div>
 
