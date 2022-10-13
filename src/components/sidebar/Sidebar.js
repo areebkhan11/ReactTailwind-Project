@@ -77,7 +77,7 @@ export default function Sidebar() {
             <h6>Master admin</h6>
             <p>Inam@zaavia.net</p>
             <p>Admin</p>
-          </div> : <div className='h-24'></div>
+          </div> : <div className='h-8'></div>
           }
           <div className="flex flex-wrap justify-center mt-4">
             <img
@@ -175,8 +175,8 @@ export default function Sidebar() {
 
       </div>
 
-      <div className={`${open ? "ml-64 duration-500" : "ml-0"} flex justify-center bg-[#F5F5F5]`}>
-        <Outlet />
+      <div className={`${open ? "ml-72 duration-500 " : "ml-20 duration-500"} flex justify-start bg-[#F5F5F5]`}>
+        <Outlet  />
       </div>
     </>
 
