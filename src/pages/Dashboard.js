@@ -6,13 +6,14 @@ export default function Dashboard() {
 
   var date = new Date();
 
+
   return (
-    <div className='flex flex-col flex-wrap justify-center'>
+    <div className="flex flex-col flex-wrap justify-start"  >
       <div className='flex justify-start mt-5 bg-[#039be5] p-1 text-white text-2xl'>
         <h3>Team's Dashboard</h3>
       </div>
 
-      <div className='flex flex-row gap-4 place-items-center  mt-6 ' >
+      <div className='flex flex-row gap-4 place-items-start  mt-6 ' >
         <Card>
           <div className="py-3 px-6 border-gray-300 flex justify-start text-xl">
             <select
