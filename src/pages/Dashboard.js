@@ -125,7 +125,7 @@ export default function Dashboard() {
         </Card>
       </div>
 
-      <div className='flex flex-row gap-4 gap-8 mt-6 col-span-2 mb-8'>
+      <div className='flex flex-row gap-5 mt-6 col-span-2 mb-8'>
         <DashboardSection2>
           <div className='flex justify-start font-medium text-xl py-4 px-4'>
             Task Distribution
@@ -208,7 +208,7 @@ export default function Dashboard() {
                 </tr>
               </tbody>
             </table>
-          <div className='flex flex-row justify-evenly gap-16 font-medium text-xl py-10 border-t mt-8'>
+          <div className='flex  justify-evenly gap-16 font-medium text-xl py-10 border-t mt-8'>
             <p>{`Team Assigned Tasks (C)`}</p>
             <p>Team Completed Tasks</p>
           </div>
@@ -216,8 +216,18 @@ export default function Dashboard() {
         </DashboardSection2>
 
         <DashboardSection2>
-          <div className='flex justify-start font-medium text-xl py-4 px-4 border-b'>
-            Task Distribution
+          <div className='flex justify-between py-4 px-4 border-b'>
+            <p className='font-medium text-xl'>Task Distribution</p>
+            <div className="border-gray-300 text-gray-500 flex justify-start text-lg">
+            <select
+              type="text"
+              autoComplete="given-name"
+              className="form-control block font-medium rounded transition ease-in-out m-0 focus:bg-white focus:outline-none"
+            >
+              <option>All</option>
+              <option>This Week</option>
+            </select>
+          </div>
           </div>
 
           <h3 className='font-medium text-xl'>Assign Task</h3>
