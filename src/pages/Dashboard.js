@@ -85,6 +85,8 @@ export default function Dashboard() {
               className="form-control block font-medium rounded transition ease-in-out m-0 focus:bg-white focus:outline-none"
             >
               <option>0</option>
+              <option>1</option>
+              <option>2</option>
             </select>
           </div>
         </Card>
@@ -108,6 +110,8 @@ export default function Dashboard() {
               className="form-control block font-medium rounded transition ease-in-out m-0 focus:bg-white focus:outline-none"
             >
               <option>0</option>
+              <option>1</option>
+              <option>2</option>
             </select>
           </div>
 
@@ -119,6 +123,8 @@ export default function Dashboard() {
               className="form-control block font-medium rounded transition ease-in-out m-0 focus:bg-white focus:outline-none"
             >
               <option>0</option>
+              <option>1</option>
+              <option>2</option>
             </select>
           </div>
         </Card>
@@ -207,29 +213,45 @@ export default function Dashboard() {
                 </tr>
               </tbody>
             </table>
-          <div className='flex  justify-evenly gap-16 font-medium text-xl py-10 border-t mt-8'>
-            <p>{`Team Assigned Tasks (C)`}</p>
-            <p>Team Completed Tasks</p>
+            <div className='flex  justify-evenly gap-16 font-medium text-xl py-10 border-t mt-8'>
+              <p>{`Team Assigned Tasks (C)`}</p>
+              <p>Team Completed Tasks</p>
+            </div>
           </div>
-        </div>
         </DashboardSection2>
 
         <DashboardSection2>
           <div className='flex justify-between py-4 px-4 border-b'>
             <p className='font-medium text-xl'>Task Distribution</p>
             <div className="border-gray-300 text-gray-500 flex justify-start text-lg">
-            <select
-              type="text"
-              autoComplete="given-name"
-              className="form-control block font-medium rounded transition ease-in-out m-0 focus:bg-white focus:outline-none"
-            >
-              <option>All</option>
-              <option>This Week</option>
-            </select>
-          </div>
+              <select
+                type="text"
+                autoComplete="given-name"
+                className="form-control block font-medium rounded transition ease-in-out m-0 focus:bg-white focus:outline-none"
+              >
+                <option>All</option>
+                <option>This Week</option>
+              </select>
+            </div>
           </div>
 
           <h3 className='font-medium text-xl'>Assign Task</h3>
+
+
+          <div class="grid place-content-end h-80">
+            <span class="text-sm text-gray-700 dark:text-gray-400 mr-5">
+              Showing <span class="font-semibold text-gray-900 dark:text-black">1</span> to <span class="font-semibold text-gray-900 dark:text-black">10</span> of <span class="font-semibold text-gray-900 dark:text-black">100</span> Entries
+            </span>
+            <div class="inline-flex mt-2 xs:mt-0">
+              <button class="py-2 px-4 text-sm font-medium text-white rounded-l dark:border-gray-700 dark:text-gray-400">
+                Prev
+              </button>
+              <button class="py-2 px-4 text-sm font-medium text-white rounded-r border-0 border-l border-gray-700 dark:border-gray-700 dark:text-gray-400">
+                Next
+              </button>
+            </div>
+          </div>
+
         </DashboardSection2>
       </div>
     </div>
