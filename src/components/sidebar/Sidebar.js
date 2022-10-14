@@ -73,7 +73,7 @@ export default function Sidebar() {
           <FiMenu size={27} className="cursor-pointer" onClick={() => setopen(!open)} />
         </div>
         <div className='bg-black h-32' style={{ background: "#1d2028" }}>
-          {open ? <div>
+          {open ? <div> 
             <h6>Master admin</h6>
             <p>Inam@zaavia.net</p>
             <p>Admin</p>
@@ -175,7 +175,7 @@ export default function Sidebar() {
 
       </div>
 
-      <div className={`${open ? "ml-72 duration-500 " : "ml-20 duration-500"} flex justify-start bg-[#F5F5F5]`}>
+      <div className={`${open ? "ml-72 duration-500 " : "ml-36 duration-500"} flex justify-start bg-[#F5F5F5]`}>
         <Outlet  />
       </div>
     </>
