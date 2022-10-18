@@ -5,10 +5,11 @@ import { MdOutlineSpaceDashboard } from "react-icons/md"
 import { FiMenu } from 'react-icons/fi'
 import { MdSupervisedUserCircle } from "react-icons/md"
 import { MdSettings } from "react-icons/md"
-import { FiGitBranch } from "react-icons/fi"
+import { FiGitBranch, FiMapPin} from "react-icons/fi"
 import { GoCalendar } from "react-icons/go"
 import Navbar from '../custom-elements/Navbar'
 import { Outlet } from 'react-router-dom';
+
 import img from "../../assets/images/kisspng-avatar-user-medicine-surgery-patient-avatar-5acc9f7a7cb983.0104600115233596105109.jpg"
 
 import { HiUsers, HiUserCircle } from 'react-icons/hi'
@@ -18,11 +19,16 @@ import { ImCross } from 'react-icons/im'
 const NavbarItems = [
 
   { id: 0, name: "Dashboard", link: '/dashboard', icon: MdOutlineSpaceDashboard },
-  { id: 1, name: "Users", link: "/users", icon: MdSupervisedUserCircle },
+  { id: 1, multi: true, name: "Calendars", list: [{ name: "Task Calendar", link: "/main", },
+  { name: "Event Calendar", link: "/main", }] },
+  { id: 2, name: "Active Tickets", link: '/dashboard', icon: MdSupervisedUserCircle },
+  { id: 3, name: "Track Users", link: '/dashboard', icon: FiMapPin },
+  { id: 4, name: "Claim Resolution", link: '/dashboard', icon: MdOutlineSpaceDashboard },
+
   { id: 2, name: "Branch", link: "/branch", icon: FiGitBranch },
   { id: 3, name: "Accademic Session", link: "/accademic-session", icon: GoCalendar },
   { id: 4, name: "Setting", link: "/setting", icon: MdSettings },
-  { id: 5, multi: true, name: "Calanders", list: [{ name: "First value", link: "/main", icon: GoCalendar }] },
+  
   {
     id: 6, multi: true, name: "Reports", list: [{ name: "second value", link: "/main", icon: GoCalendar },
     { name: "third value", link: "/main", icon: GoCalendar }]
