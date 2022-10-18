@@ -76,8 +76,11 @@ export default function Dashboard() {
                 <h5 className='text-xl font-medium'>DUE TASKS</h5>
               </div>
 
-              <div class="flex justify-start font-medium py-11 px-6 border-t border-gray-300">
+              <div class="flex justify-start font-medium py-4 px-6 border-t border-gray-300">
                 {`Until ${date.toLocaleDateString()} : 0`}
+              </div>
+
+              <div class="py-7">
               </div>
             </Card>
 
