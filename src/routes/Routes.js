@@ -9,6 +9,7 @@ const BlankLayout = lazy(()=> import('../components/layouts/BlankLayout') )
 
 // ---------Pages---------------
 const Dashboard = lazy(()=> import('../pages/Dashboard'))
+const Setups = lazy(()=> import('../pages/Setups'))
 const SignIn = lazy(()=> import('../pages/SignIn') )
 const Posts = lazy(()=> import('../components/Posts/Posts'))
 
@@ -22,6 +23,7 @@ const Router =  [
         children: [
             { path: "/",  element:<Navigate to="/dashboard"/>},
             { path: "/dashboard", element: <Dashboard /> },
+            { path: "/Setups", element: <Setups/> },
             { path: '*', element: <Navigate to="/dashboard" /> },
             // { path: '/Posts', element: <Posts /> },
             
