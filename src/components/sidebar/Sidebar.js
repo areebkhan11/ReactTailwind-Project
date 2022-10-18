@@ -180,6 +180,7 @@ export default function Sidebar() {
         </div>
 
       </div>
+      
 
       <div className={`${open ? "ml-72 duration-500 " : "ml-36 duration-500"} flex justify-start bg-[#F5F5F5]`}>
         <Outlet  />

@@ -10,6 +10,9 @@ const BlankLayout = lazy(()=> import('../components/layouts/BlankLayout') )
 // ---------Pages---------------
 const Dashboard = lazy(()=> import('../pages/Dashboard'))
 const Setups = lazy(()=> import('../pages/Setups'))
+const ClientManagement = lazy(()=> import('../components/ClientManagement'))
+const Allowances = lazy(()=> import('../components/Allowances'))
+const NewAllowances = lazy(()=> import('../components/NewAllowances'))
 const SignIn = lazy(()=> import('../pages/SignIn') )
 const Posts = lazy(()=> import('../components/Posts/Posts'))
 
@@ -24,6 +27,9 @@ const Router =  [
             { path: "/",  element:<Navigate to="/dashboard"/>},
             { path: "/dashboard", element: <Dashboard /> },
             { path: "/Setups", element: <Setups/> },
+            { path: "/clientmanagement", element: <ClientManagement /> },
+            { path: "/allowances", element: <Allowances /> },
+            { path: "/newallowances", element: <NewAllowances /> },
             { path: '*', element: <Navigate to="/dashboard" /> },
             // { path: '/Posts', element: <Posts /> },
             
