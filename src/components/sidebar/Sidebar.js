@@ -27,7 +27,7 @@ const NavbarItems = [
 
   { id: 2, name: "Branch", link: "/branch", icon: FiGitBranch },
   { id: 3, name: "Accademic Session", link: "/accademic-session", icon: GoCalendar },
-  { id: 4, name: "Setting", link: "/setting", icon: MdSettings },
+  { id: 4, name: "Setups", link: "/Setups", icon: MdSettings },
   
   {
     id: 6, multi: true, name: "Reports", list: [{ name: "second value", link: "/main", icon: GoCalendar },
