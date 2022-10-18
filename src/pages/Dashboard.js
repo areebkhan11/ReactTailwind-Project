@@ -6,6 +6,20 @@ export default function Dashboard() {
 
   var date = new Date();
 
+  const taskDetails = [
+    {
+      task: "Clifton"
+    },
+    {
+      task: "Ziauddin"
+    },
+    {
+      task: "Gulshan"
+    },
+    {
+      task: "Shahar e Faisal"
+    }
+  ]
 
   return (
     <div className="flex flex-col flex-wrap justify-start"  >
@@ -74,11 +88,11 @@ export default function Dashboard() {
             <h5 className='text-xl font-medium'>OPEN</h5>
           </div>
 
-          <div class="flex justify-start font-medium py-3 px-6 border-t border-gray-300">
+          <div className="flex justify-start font-medium py-3 px-6 border-t border-gray-300">
             Closed Today: 0
           </div>
 
-          <div class="flex justify-start font-medium py-3 px-6 border-t border-gray-300">
+          <div className="flex justify-start font-medium py-3 px-6 border-t border-gray-300">
             Verification Pending:
             <select
               type="text"
@@ -103,7 +117,7 @@ export default function Dashboard() {
             </p>
           </div>
 
-          <div class="flex justify-start font-medium py-4 px-6 mb-2 border-t border-gray-300">
+          <div className="flex justify-start font-medium py-4 px-6 mb-2 border-t border-gray-300">
             Verification Pending:
             <select
               type="text"
@@ -116,7 +130,7 @@ export default function Dashboard() {
             </select>
           </div>
 
-          <div class="flex justify-start font-medium py-9 px-6 border-t border-gray-300">
+          <div className="flex justify-start font-medium py-9 px-6 border-t border-gray-300">
             View All Targets:
             <select
               type="text"
@@ -137,84 +151,84 @@ export default function Dashboard() {
             Task Distribution
           </div>
 
-          <div class="overflow-x-auto relative shadow-md sm:rounded-lg">
-            <table class="w-full text-sm text-left text-black-500 dark:text-black-400">
-              <thead class="text-sm text-black-700 uppercase bg-white-50 dark:bg-white-700 dark:text-black-400">
+          <div className="overflow-x-auto relative shadow-md sm:rounded-lg">
+            <table className="w-full text-sm text-left text-black-500 dark:text-black-400">
+              <thead className="text-sm text-black-700 uppercase bg-white-50 dark:bg-white-700 dark:text-black-400">
                 <tr className='border-b border-t divide-x text-center'>
-                  <th scope="col" class="py-3 px-6">
+                  <th scope="col" className="py-3 px-6">
                     TASK
                   </th>
-                  <th scope="col" class="py-3 px-6">
+                  <th scope="col" className="py-3 px-6">
                     {`Assigned (A)`}
                   </th>
-                  <th scope="col" class="py-3 px-6">
+                  <th scope="col" className="py-3 px-6">
                     {`Completed (B)`}
                   </th>
-                  <th scope="col" class="py-3 px-6">
+                  <th scope="col" className="py-3 px-6">
                     {`Individual \n`}
                     {`(B/A) * 100`}
                   </th>
-                  <th scope="col" class="py-3 px-6">
+                  <th scope="col" className="py-3 px-6">
                     {`Total \n`}
                     {`(B/A) * 100`}
                   </th>
                 </tr>
               </thead>
               <tbody>
-                <tr class="bg-white border-b dark:bg-black-800 divide-x dark:border-black-700">
-                  <th scope="row" class="py-4 px-6 font-medium text-black-900 whitespace-nowrap dark:text-black">
+                <tr className="bg-white border-b dark:bg-black-800 divide-x dark:border-black-700">
+                  <th scope="row" className="py-4 px-6 font-medium text-black-900 whitespace-nowrap dark:text-black">
                     Apple MacBook Pro 17"
                   </th>
-                  <td class="py-4 px-6">
+                  <td className="py-4 px-6">
                     Sliver
                   </td>
-                  <td class="py-4 px-6">
+                  <td className="py-4 px-6">
                     Laptop
                   </td>
-                  <td class="py-4 px-6">
+                  <td className="py-4 px-6">
                     $2999
                   </td>
-                  <td class="py-4 px-6">
-                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                  <td className="py-4 px-6">
+                    <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
                   </td>
                 </tr>
-                <tr class="bg-white border-b dark:bg-black-800 divide-x dark:border-black-700">
-                  <th scope="row" class="py-4 px-6 font-medium text-black-900 whitespace-nowrap dark:text-black">
+                <tr className="bg-white border-b dark:bg-black-800 divide-x dark:border-black-700">
+                  <th scope="row" className="py-4 px-6 font-medium text-black-900 whitespace-nowrap dark:text-black">
                     Microsoft Surface Pro
                   </th>
-                  <td class="py-4 px-6">
+                  <td className="py-4 px-6">
                     White
                   </td>
-                  <td class="py-4 px-6">
+                  <td className="py-4 px-6">
                     Laptop PC
                   </td>
-                  <td class="py-4 px-6">
+                  <td className="py-4 px-6">
                     $1999
                   </td>
-                  <td class="py-4 px-6">
-                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                  <td className="py-4 px-6">
+                    <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
                   </td>
                 </tr>
-                <tr class="bg-white dark:bg-black-800 divide-x border-b">
-                  <th scope="row" class="py-4 px-6 font-medium text-black-900 whitespace-nowrap dark:text-black">
+                <tr className="bg-white dark:bg-black-800 divide-x border-b">
+                  <th scope="row" className="py-4 px-6 font-medium text-black-900 whitespace-nowrap dark:text-black">
                     Magic Mouse 2
                   </th>
-                  <td class="py-4 px-6">
+                  <td className="py-4 px-6">
                     Black
                   </td>
-                  <td class="py-4 px-6">
+                  <td className="py-4 px-6">
                     Accessories
                   </td>
-                  <td class="py-4 px-6">
+                  <td className="py-4 px-6">
                     $99
                   </td>
-                  <td class="py-4 px-6">
-                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                  <td className="py-4 px-6">
+                    <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
                   </td>
                 </tr>
               </tbody>
             </table>
-            <div className='flex  justify-evenly gap-16 font-medium text-xl py-10 border-t mt-8'>
+            <div className='flex justify-evenly gap-16 font-medium text-xl py-10 border-t mt-52'>
               <p>{`Team Assigned Tasks (C)`}</p>
               <p>Team Completed Tasks</p>
             </div>
@@ -238,16 +252,25 @@ export default function Dashboard() {
 
           <h3 className='font-medium text-xl'>Assign Task</h3>
 
+          {
+            taskDetails.map(task => {
+              return(
+                <div className='flex justify-start font-medium text-xl ml-3 mt-6'>
+                  {task.task}
+                </div>
+              )
+            })
+          }
 
-          <div class="grid place-content-end h-80">
-            <span class="text-sm text-gray-700 dark:text-gray-400 mr-5">
-              Showing <span class="font-semibold text-gray-900 dark:text-black">1</span> to <span class="font-semibold text-gray-900 dark:text-black">10</span> of <span class="font-semibold text-gray-900 dark:text-black">100</span> Entries
+          <div className="grid place-content-end h-80 pb-4">
+            <span className="text-sm text-gray-700 dark:text-gray-400 mr-5">
+              Showing <span className="font-semibold text-gray-900 dark:text-black">1</span> to <span className="font-semibold text-gray-900 dark:text-black">10</span> of <span className="font-semibold text-gray-900 dark:text-black">100</span> Entries
             </span>
-            <div class="inline-flex mt-2 xs:mt-0">
-              <button class="py-2 px-4 text-sm font-medium text-white rounded-l dark:border-gray-700 dark:text-gray-400">
+            <div className="inline-flex mt-2 xs:mt-0">
+              <button className="py-2 px-4 text-sm font-medium text-white rounded-l dark:border-gray-700 dark:text-gray-400">
                 Prev
               </button>
-              <button class="py-2 px-4 text-sm font-medium text-white rounded-r border-0 border-l border-gray-700 dark:border-gray-700 dark:text-gray-400">
+              <button className="py-2 px-4 text-sm font-medium text-white rounded-r border-0 border-l border-gray-700 dark:border-gray-700 dark:text-gray-400">
                 Next
               </button>
             </div>

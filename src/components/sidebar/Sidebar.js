@@ -75,11 +75,11 @@ export default function Sidebar() {
 
       <div className={` ${open ? "w-72" : "w-16"} overflow-hidden top-0 left-0 fixed duration-500 z-10 overflow-x-hidden text-white rounded-sm drop-shadow-xl `} >
 
-        <div className="py-3 flex justify-end  px-4 " style={{ background: "#1d2028" }}>
+        <div className="py-3 flex justify-end  px-4 bg-[#1d2028]">
           <FiMenu size={27} className="cursor-pointer" onClick={() => setopen(!open)} />
         </div>
-        <div className='bg-black h-32' style={{ background: "#1d2028" }}>
-          {open ? <div>
+        <div className='bg-[#1d2028] h-32'>
+          {open ? <div> 
             <h6>Master admin</h6>
             <p>Inam@zaavia.net</p>
             <p>Admin</p>
@@ -94,7 +94,7 @@ export default function Sidebar() {
 
           </div>
         </div>
-        <div className=' flex flex-col gap-3  pr-4 pt-8 min-h-screen' style={{ background: "#2d313e" }} >
+        <div className=' flex flex-col gap-3 pr-4 pt-8 min-h-screen bg-[#2d313e]' >
           {
             NavbarItems?.map((e, i) => {
               return (
@@ -181,7 +181,7 @@ export default function Sidebar() {
 
       </div>
 
-      <div className={`${open ? "ml-72 duration-500 " : "ml-20 duration-500"} flex justify-start bg-[#F5F5F5]`}>
+      <div className={`${open ? "ml-72 duration-500 " : "ml-36 duration-500"} flex justify-start bg-[#F5F5F5]`}>
         <Outlet  />
       </div>
     </>
