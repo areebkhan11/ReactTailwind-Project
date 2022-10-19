@@ -26,7 +26,7 @@ const NavbarItems = [
   { id: 4, name: "Claim Resolution", link: '/dashboard', icon: MdOutlineSpaceDashboard },
   { id: 2, name: "Branch", link: "/branch", icon: FiGitBranch },
   { id: 3, name: "Accademic Session", link: "/accademic-session", icon: GoCalendar },
-  { id: 4, name: "Setting", link: "/setting", icon: MdSettings },
+  { id: 4, name: "Setups", link: "/Setups", icon: MdSettings },
   
   {
     id: 6, multi: true, name: "Reports", list: [{ name: "second value", link: "/main", icon: GoCalendar },
@@ -179,6 +179,7 @@ export default function Sidebar() {
         </div>
 
       </div>
+      
 
       <div className={`${open ? "ml-64 duration-500 " : "ml-16 duration-500  pr-12"}  pr-7 flex justify-start bg-[#F5F5F5]`}>
         <Outlet  />
