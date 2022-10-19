@@ -19,12 +19,11 @@ import { ImCross } from 'react-icons/im'
 const NavbarItems = [
 
   { id: 0, name: "Dashboard", link: '/dashboard', icon: MdOutlineSpaceDashboard },
-  { id: 1, multi: true, name: "Calendars", list: [{ name: "Task Calendar", link: "/main", },
+  { id: 1, multi: true, name: "Calendars", list: [{ name: "Task Calendar", link: "/taskcalander", },
   { name: "Event Calendar", link: "/main", }] },
   { id: 2, name: "Active Tickets", link: '/dashboard', icon: MdSupervisedUserCircle },
   { id: 3, name: "Track Users", link: '/dashboard', icon: FiMapPin },
   { id: 4, name: "Claim Resolution", link: '/dashboard', icon: MdOutlineSpaceDashboard },
-
   { id: 2, name: "Branch", link: "/branch", icon: FiGitBranch },
   { id: 3, name: "Accademic Session", link: "/accademic-session", icon: GoCalendar },
   { id: 4, name: "Setups", link: "/Setups", icon: MdSettings },
@@ -117,7 +116,7 @@ export default function Sidebar() {
                         return (
                           <ul id="dropdown-example" className={dropdown ? "py-2 space-y-2" : "hidden py-2 space-y-2"}>
                             <li>
-                              <a href="#" className="flex items-center w-full p-1 text-base font-normal text-white transition duration-75 rounded-lg group hover:bg-blue-500 rounded-r-full active:ring-cyan-200  focus:ring-2 focus:ring-cyan-200 pl-20">{v.name}</a>
+                              <a onClick={() => navigate(v.link)} className="flex items-center w-full p-1 text-base font-normal text-white transition duration-75 rounded-lg group hover:bg-blue-500 rounded-r-full active:ring-cyan-200  focus:ring-2 focus:ring-cyan-200 pl-20">{v.name}</a>
                             </li>
                           </ul>
                         )
@@ -182,7 +181,7 @@ export default function Sidebar() {
       </div>
       
 
-      <div className={`${open ? "ml-72 duration-500 " : "ml-36 duration-500"} flex justify-start bg-[#F5F5F5]`}>
+      <div className={`${open ? "ml-64 duration-500 " : "ml-16 duration-500  pr-12"}  pr-7 flex justify-start bg-[#F5F5F5]`}>
         <Outlet  />
       </div>
     </>
