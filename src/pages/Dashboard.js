@@ -22,12 +22,13 @@ export default function Dashboard() {
   ]
 
   return (
-    <div className="flex flex-col flex-wrap justify-start"  >
+    <div className="container  px-8 "  >
+      <div className="bg-white rounded-lg shadow overflow-hidden">
       <div className='flex justify-start mt-5 bg-[#039be5] p-1 text-white text-2xl'>
         <h3>Team's Dashboard</h3>
       </div>
 
-      <div className='flex flex-row gap-4 place-items-start  mt-6 ' >
+      <div className='flex flex-column justify-center gap-2   ' >
         <Card>
           <div className="py-3 px-6 border-gray-300 flex justify-start text-xl">
             <select
@@ -277,6 +278,7 @@ export default function Dashboard() {
           </div>
 
         </DashboardSection2>
+      </div>
       </div>
     </div>
   )

@@ -1,6 +1,7 @@
 import React, {lazy} from "react";
 
 import { Navigate } from 'react-router-dom';
+import TaskCalendar from "../pages/TaskCalendar";
 
 // ---------Layouts---------------
 const FullLayout = lazy(()=> import('../components/layouts/FullLayout'))
@@ -22,7 +23,8 @@ const Router =  [
         children: [
             { path: "/",  element:<Navigate to="/dashboard"/>},
             { path: "/dashboard", element: <Dashboard /> },
-            { path: '*', element: <Navigate to="/dashboard" /> },
+            { path: "/taskcalander", element: <TaskCalendar /> },
+            { path: '*', element: <Navigate to="/dashboard" /> }, 
             // { path: '/Posts', element: <Posts /> },
             
           ]
