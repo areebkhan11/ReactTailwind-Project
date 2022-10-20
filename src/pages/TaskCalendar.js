@@ -115,12 +115,26 @@ export default function Calendar() {
     // };
 
     const nextMonth = () => {
-        setMonth(month + 1);
+        if(month === 11){
+            console.log("Next Year Mar dy");
+            setYear(year + 1);
+            setMonth(0);
+        }
+        else{
+            setMonth(month + 1);
+        }
         getNoOfDays();
     };
 
     const prevMonth = () => {
-        setMonth(month - 1);
+        if(month === 0){
+            console.log("Pre Year Mar dy");
+            setYear(year - 1);
+            setMonth(11);
+        }
+        else{
+            setMonth(month - 1);
+        }
         getNoOfDays();
     };
 
@@ -157,7 +171,7 @@ export default function Calendar() {
 					<button
 						type="button"
 						onClick={() => prevMonth()}
-						disabled={month === 0}
+						//disabled={month === 0}
 						// className={btnClass(0)}
 					>
 						<ArrowLeftIcon className="h-6 w-6 text-gray-500 inline-flex leading-none" />
@@ -167,7 +181,7 @@ export default function Calendar() {
 					<button
 						type="button"
 						onClick={() => nextMonth()}
-						disabled={month === 11}
+						//disabled={month === 11}
 						// className={btnClass(11)}
 					>
 						<ArrowRightIcon className="h-6 w-6 text-gray-500 inline-flex leading-none" />
